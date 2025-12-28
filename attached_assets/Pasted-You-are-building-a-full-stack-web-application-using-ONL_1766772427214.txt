@@ -1,0 +1,187 @@
+You are building a full-stack web application using ONLY:
+- React (frontend)
+- Node.js + Express (backend)
+No other languages or frameworks are allowed.
+
+PROJECT GOAL:
+Design and implement a modern, professional, animated educational & analytics website UI with a clean backend for course registration email handling.
+
+The UI must look premium, not basic cards and flex only.
+Use subtle professional animations (hover, scroll reveal, transitions).
+No flashy or gaming effects.
+
+--------------------------------------------------
+FRONTEND REQUIREMENTS (React)
+--------------------------------------------------
+
+1. GENERAL UI STYLE
+- Corporate, modern, analytics-style design
+- Use section-based layout, not a single flat grid
+- Clean typography, good spacing, visual hierarchy
+- Smooth micro-animations (fade, slide, hover elevation)
+- Fully responsive (desktop + mobile)
+
+2. PAGES / SECTIONS
+
+A. HOME PAGE
+- Hero section with title like:
+  “Eaxion – Modern Tech & Analytics Learning Platform”
+- Subheading focused on technology, analytics, and professional education
+- Call-to-action buttons:
+  “Explore Courses” and “Connect With Us”
+- Subtle entrance animation on load
+
+B. ABOUT SECTION
+- Short professional description about innovation, trust, analytics, and learning
+- Animated reveal on scroll
+
+C. SERVICES SECTION
+Display service tiles with hover animations:
+- Tech Consulting
+- Data Analytics
+- Dashboard & App Development
+- Cloud Automation
+- Digital Transformation
+- Business Intelligence
+
+Each service card:
+- Icon placeholder
+- Title
+- One-line description
+- Hover animation (scale or shadow)
+
+D. COURSES SECTION (IMPORTANT)
+
+This must NOT be plain cards.
+Use interactive tiles or panels with animation.
+
+Split into 3 subsections:
+
+1) PROFESSIONAL CERTIFICATIONS
+- ACS (Institute of Company Secretaries of India)
+- CA (Institute of Chartered Accountants of India)
+- CMA (Institute of Cost and Management Accountants)
+- ICSA (London, Australia, Hong Kong, Singapore)
+- CFA Australia
+- CFA USA
+- ACCA
+- CIMA
+
+2) TECHNICAL COURSES
+- Java Stack
+- MEAN & MERN Stack
+- Python
+- Business Intelligence (BI)
+- Analytics
+- AI Basics
+
+3) LEARN (Traditional Knowledge)
+- Nalayira Divya Prabandham
+- Vedas
+
+COURSE UI BEHAVIOR:
+- Each course is shown as an animated tile
+- On hover: elevation + highlight
+- On click:
+  - Open a modal or slide-in panel
+  - Show brief course description
+  - Show “Register Now” button
+- Clicking “Register Now” navigates to Contact page
+- Selected course should auto-fill in the contact form
+
+E. YOUTUBE SECTION
+- Display video thumbnails (not raw embeds)
+- Hover animation with play icon
+- On click: open modal with embedded YouTube video
+
+F. CONNECT PAGE
+- Display social media icons with hover animations:
+  Instagram
+  LinkedIn
+  YouTube
+  Facebook
+- Icons should animate on hover (color or scale)
+- Short line: “Join our learning & insights ecosystem”
+
+G. CONTACT PAGE (VERY IMPORTANT)
+- Professional animated form
+- Fields:
+  Name
+  Email
+  Phone
+  Course selection dropdown (must list ALL courses)
+  Message
+- Floating labels or smooth input animations
+- Submit button with loading animation
+- On submit:
+  - Send data to backend
+  - Show success confirmation animation
+
+--------------------------------------------------
+ANIMATION GUIDELINES
+--------------------------------------------------
+- Use React-friendly animation techniques (CSS transitions or JS-based)
+- Scroll reveal animations
+- Hover effects only (no continuous motion)
+- Keep animation durations subtle (200–400ms)
+- Professional SaaS-style motion only
+
+--------------------------------------------------
+BACKEND REQUIREMENTS (Node.js + Express)
+--------------------------------------------------
+
+1. SETUP
+- Express server
+- Enable CORS
+- Parse JSON requests
+
+2. API ENDPOINT
+POST /register
+
+Payload:
+{
+  name,
+  email,
+  phone,
+  course,
+  message
+}
+
+3. FUNCTIONALITY
+- Validate inputs
+- On successful submission:
+  - Send course registration email to client’s email address
+  - Include:
+    Name
+    Email
+    Phone
+    Selected course
+    Message
+- Return success or error response to frontend
+
+4. EMAIL
+- Use standard Node email approach
+- No frontend email logic
+- Backend handles everything
+
+--------------------------------------------------
+TECH CONSTRAINTS
+--------------------------------------------------
+- Use ONLY React, Node.js, Express
+- No Next.js, no Vue, no Angular
+- No Tailwind requirement (plain CSS or CSS modules acceptable)
+- Clean folder structure
+- Comment code clearly
+
+--------------------------------------------------
+DELIVERABLE
+--------------------------------------------------
+Generate:
+- React frontend with all pages, animations, and interactions
+- Express backend with working course registration API
+- Clear instructions to run frontend and backend in Replit
+- UI must look professional, modern, and production-ready
+
+Do NOT generate placeholder lorem UI.
+Do NOT generate a basic card grid.
+Think like a real analytics + education platform.
